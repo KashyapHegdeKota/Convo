@@ -16,7 +16,7 @@ function buildChatURL(sessionID) {
   const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
     ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : "http://localhost:3000";
-  return `${baseUrl}/chat/${sessionID}`;
+  return `${baseUrl}/join/${sessionID}`;
 }
 
 // This is your Server Component. It stays clean and focused on data.
